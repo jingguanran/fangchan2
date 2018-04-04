@@ -1,18 +1,24 @@
 <template>
   <div class="home">
-    <img src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+   <Jgr a="1" />
+   <Jgr a="2"/>
+   <Jgr a="3"/>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+import Jgr from '@/components/Jgr.vue'
 
 export default {
   name: 'home',
+  data(){
+    return {
+      c:0
+    }
+  },
   components: {
-    HelloWorld
+    Jgr:Jgr
   }
 }
 </script>
